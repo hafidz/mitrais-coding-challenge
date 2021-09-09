@@ -1,0 +1,16 @@
+{
+  "application.js": "/packs/js/application-d91a3c6932b12fbb68ab.js",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-d91a3c6932b12fbb68ab.js"
+      ]
+    },
+    "index": {
+      "js": [
+        "/packs/js/index-fe675dac547ed778dc24.js"
+      ]
+    }
+  },
+  "index.js": "/packs/js/index-fe675dac547ed778dc24.js"
+}

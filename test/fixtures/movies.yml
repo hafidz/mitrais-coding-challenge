@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  rating: 1.5
+  overview: MyText
+  poster_path: MyString
+  popularity: MyString
+  first_air_date: 2021-09-08
+  backdrop_path: MyString
+  media_type: MyString
+  adult: false
+  release_date: 2021-09-08
+
+two:
+  name: MyString
+  rating: 1.5
+  overview: MyText
+  poster_path: MyString
+  popularity: MyString
+  first_air_date: 2021-09-08
+  backdrop_path: MyString
+  media_type: MyString
+  adult: false
+  release_date: 2021-09-08
