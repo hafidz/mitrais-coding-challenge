@@ -33,7 +33,7 @@ export default function Header() {
                   <a href="/">Trending</a>
                 </li>
                 <li>
-                  <a href="/">Genre Movie</a>
+                  <a href="/genre">Genre Movie</a>
                 </li>
                 <li>
                   <a href="/api">Api</a>
