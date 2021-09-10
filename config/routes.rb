@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :movies
       resources :sessions
+      get 'genre' => 'movies#genre', as: "genre"
     end
   end
   match '*path', to: 'homes#index', via: :all
