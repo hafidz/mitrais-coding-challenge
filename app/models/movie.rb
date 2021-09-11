@@ -2,7 +2,7 @@ class Movie < ApplicationRecord
   has_and_belongs_to_many :genres
 
   def self.get_data_movie
-    request = res = RestClient.get 'https://api.themoviedb.org/3/trending/all/week?api_key=d90e430a19e15325653e0520e310e424'
+    request = RestClient.get 'https://api.themoviedb.org/3/trending/all/week?api_key=d90e430a19e15325653e0520e310e424'
     response = JSON.parse(request.body)
     response["results"].each do |data|
       movie = Movie.create(
@@ -34,7 +34,8 @@ class Movie < ApplicationRecord
           media_type: movie.media_type,
           first_air_date: movie.first_air_date,
           release_date: movie.release_date,
-          genres: movie.genres.map{|a| {id: a.id, name: a.name}}}
+          genres: movie.genres.map{|a| {id: a.id, name: a.name}}
+        }
     end
     return data
   end

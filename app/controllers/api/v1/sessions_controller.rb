@@ -1,6 +1,6 @@
 class Api::V1::SessionsController < ApplicationController
   def create
-    ap @member = Member.find_by_email(params[:username])
+    @member = Member.find_by_email(params[:username])
     if @member&.authenticate(params[:password])
       token = JsonWebToken.encode(user_id: @member.id)
       time = Time.now + 24.hours.to_i

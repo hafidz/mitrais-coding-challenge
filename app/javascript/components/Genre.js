@@ -7,7 +7,6 @@ export default function Genre() {
   return (
     <div>
       <Header></Header>
-      <div className="clearfix">&nbsp;&nbsp;</div>
       <section class="pricing section">
         <div class="container">
           <div class="pricing-inner section-inner has-top-divider">
